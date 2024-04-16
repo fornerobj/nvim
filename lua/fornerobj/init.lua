@@ -2,7 +2,6 @@ require("fornerobj.lazy_init")
 require("fornerobj.remap")
 require("fornerobj.set")
 --[[
-require("fornerobj.packer")
 local augroup = vim.api.nvim_create_augroup
 local Group1  = augroup('fornerobj', {})
 
@@ -29,8 +28,7 @@ autocmd({"BufWritePre"}, {
     pattern = "*",
     command = "%s/\\s\\+$//e",
 })
-
+--]]
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
---]]
