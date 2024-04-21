@@ -29,6 +29,9 @@ return {
                     ensure_installed = {
                     "lua_ls",
                     "rust_analyzer",
+                    "eslint",
+                    "tsserver",
+                    "html",
                     },
                     handlers = {
                     function(server_name) -- default handler (optional)

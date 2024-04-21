@@ -18,3 +18,5 @@ require("lazy").setup({
     change_detection = { notify = false }
 })
 
+require("mason").setup()
+
