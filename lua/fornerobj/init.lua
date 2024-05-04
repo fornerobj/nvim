@@ -33,6 +33,8 @@ vim.opt.hlsearch = true
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
 
+vim.opt.guicursor = 'n-v-c-i:block'
+
 --AUTO COMMANDS
 
 -- Highlight when yanking (copying) text
