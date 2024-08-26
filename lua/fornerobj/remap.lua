@@ -16,4 +16,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open diagnostics' })
 
+-- Surround highlighted text with parentheses
+vim.keymap.set('v', '<leader>s', 'xi()<Esc>P', { desc = 'Surround selection with parentheses' })

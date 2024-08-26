@@ -16,7 +16,7 @@ return { -- LSP Configuration & Plugins
             { 'folke/neodev.nvim', opts = {} },
         },
         config = function()
-            -- Brief aside: **What is LSP?**
+                       -- Brief aside: **What is LSP?**
             --
             -- LSP is an initialism you've probably heard, but might not understand what it is.
             --
@@ -156,7 +156,7 @@ return { -- LSP Configuration & Plugins
             --  - settings (table): Override the default settings passed when initializing the server.
             --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
             local servers = {
-                -- clangd = {},
+                clangd = {},
                 -- gopls = {},
                 -- pyright = {},
                 -- rust_analyzer = {},
@@ -213,6 +213,7 @@ return { -- LSP Configuration & Plugins
                     end,
                 },
             }
+
         end},
     { -- Autocompletion
         'hrsh7th/nvim-cmp',
